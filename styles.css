@@ -1,0 +1,194 @@
+/*Classes Générales*/
+
+    /*FlexBox*/
+    .FlexCentre
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .FlexAround
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .FlexBetween
+    {
+        display: flex;
+        /*justify-content: space-between;*/
+        align-items: center;
+    }
+    .FlexColonne
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .FlexRow
+    {
+        display: flex;
+        flex-direction: row;
+        /*width: 100%;
+        margin-right: -10px;*/
+        
+    }
+    .PaddingTop
+    {
+        padding-top: 30px;
+    }
+    
+        
+            /*Couleurs*/
+            .Noir
+            {
+                color: black;
+            }
+            .BleuClair
+            {
+                color:#DEEBFF;
+            }
+            .Bleu
+            {
+                color:#0065FC;
+            }
+            .Gris
+            {
+                color:#F2F2F2;
+            }
+            .Blanc
+            {
+                color: white;
+            }
+            /*Couleur de fond*/
+            .BgNoir
+            {
+                background-color: black;
+            }
+            .BgBleuClair
+            {
+                background-color:#DEEBFF;
+            }
+            .BgBleu
+            {
+                background-color:#0065FC;
+            }
+            .BgGris
+            {
+                background-color:#F2F2F2;
+            }
+            .BgBlanc
+            {
+                background-color: white;
+            }
+                /*Gras*/
+                .Gras
+                    {
+                    font-weight: bold;
+                    
+                    }
+                    
+                    /*Habillage Nav*/
+                    .DecorationNone
+                    {
+                        text-decoration: none;
+                    }
+                    /*
+                    #HovInsc:hover
+                    {
+                        
+                        font-size: 17px;
+                        
+                    }
+                    */
+                    
+                    #AncreNav
+                    {
+                        display:flex;
+                        flex-direction: row;
+                        
+                        
+                        
+                    }
+                    #NAVportable
+                    {
+                        display: none;
+                    }
+                    #BoutonNavHeb
+                    {
+                        text-decoration: none;
+                        color: black;
+                        
+                        text-align: center;
+                        padding: 37px 10px;
+
+                    }
+                    
+                    #BoutonNavHeb:hover 
+                    {
+                        
+                        border-top:4px solid #0065FC !important;
+                        color: #0065FC !important;
+                        
+                       
+                        
+                    }
+                    #boutonNavHeb:focus
+                    {
+                        background-color: aquamarine;
+                        border-top:4px solid #0065FC;
+                        color: #0065FC;
+                    }
+                    
+                    #BoutonNavAct
+                    {
+                        text-decoration: none;
+                        color: black;
+                        
+                        text-align: center;
+                        padding: 37px 50px;
+                        
+
+                    }
+                    
+                    #BoutonNavAct:hover
+                    {
+                        border-top:4px solid #0065FC !important;
+                        color: #0065FC !important;
+                        
+                    }
+                    
+                    
+                    
+                    .MarginTop
+                    {
+                        margin-top: 20px;
+                    }
+                    
+                    /*Titres*/
+                    h1
+                    {
+                        font-weight: bolder;
+                    }
+                    .LineHeight
+                    {
+                        line-height: 1.5em;
+                    }
+                    
+                        
+                        
+                        main section h1
+                        {
+                            font-size: 24px;
+                        }
+                        main section aside h1
+                        {
+                            font-size: 24px;
+                        }
+                        .Size20
+                        {
+                            font-size: 20px;
+                        }
+
+                        
+                        
+

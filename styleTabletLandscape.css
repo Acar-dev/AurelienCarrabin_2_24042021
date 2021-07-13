@@ -1,0 +1,692 @@
+@media all and (min-width: 768px) and (max-width: 1025px)
+
+{
+    header
+    {
+        width: 100%;
+    }
+    
+    .FlexRow
+    {
+        width: auto;
+    }
+    #BoxActivites
+    {
+        width: 100%;
+        height: 1000px;   
+    }
+    #BoxHebergement
+    {
+        width: 555px;
+    }
+    #BoxPopulaire
+    {
+        width: 380px;
+        margin-left: 10px;
+    }
+    /*
+    #AncreNav
+    {
+        margin-left: 50%;
+    }
+    .MarginRight
+    {
+        margin-right: 1%;
+    }
+    */
+
+.FlexTop
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        
+    }
+    .PaddingTop
+    {
+        padding-top: 30px;
+    }
+/*Espacements*/
+.sizeLiens
+{
+    width: 40%;
+}
+
+/*Tailles d'images*/
+                        /*Pour Hébergement*/
+                        
+                        .Lsmall
+                        {
+                            object-fit: contain;
+                            object-position: 50% -60%;                        
+                            border-radius: 15px;
+                            width: 236px;
+                            height: 190px;
+                            margin-left: 5px;
+                            margin-top: 5px;
+                                    
+                        }
+                        .PSpecialPaysage
+                        {
+                            object-fit: contain;
+                            object-position: 50% -10%;                        
+                            border-radius: 15px;
+                            width: 236px;
+                            height: 190px;
+                            margin-left: 5px;
+                            margin-top: 5px;
+                                    
+                        }
+                        .PSpecialBig
+                        {
+                            position: absolute;                   
+                            
+                            /*clip: rect(50px auto auto auto);*/
+                            clip-path: inset(50px 0 0 round 15px);
+                            top: -50px;
+                            width: 236px;
+                            margin-left: 5px;
+                            margin-top: 5px;       
+                        }
+                        .PSpecialPortrait
+                        {
+                            position: absolute;                   
+                            
+                            /*clip: rect(50px auto auto auto);*/
+                            clip-path: inset(120px 0 0 round 15px);
+                            top:-120px;
+                            width: 236px;
+                            margin-left: 5px;
+                            margin-top: 5px;       
+                        }
+                        .PSpecialPopulaire
+                        {
+                            
+                            position:absolute;                     
+                            clip-path: inset(0 40px 0 round 15px 0 0 15px );
+                            left:-40px;
+                            height: 135px;
+                            margin-left: 5px;
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                                    
+                        }
+                        .PSpecialPopulaire2
+                        {
+                            
+                            position:absolute;                     
+                            clip-path: inset(0 25px 0 round 15px 0 0 15px );
+                            left:-25px;
+                            height: 135px;
+                            margin-left: 5px;
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                                    
+                        }
+                        .PSpecialPopulaire3
+                        {
+                            
+                            position:absolute;                     
+                            clip-path: inset(30px 0 25px round 15px 0 0 15px );
+                            left:0;
+                            top:-30px;
+                            height: 190px;
+                            margin-left: 5px;
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                                    
+                        }
+                            /*Pour Hébergement*/
+                            .ImgXL
+                            {
+                                position:absolute; 
+                                clip-path: inset(0 100px 0 round 0 0 0 0 );
+                                
+                                top:-50px;
+                                left:-212px;
+                            }
+                            .ImgXL2
+                            {
+                                position:absolute; 
+                                clip-path: inset(0 0 0 0 round 0);
+                               left: -145px;
+                               top:0px;
+                            }
+                            .ImgL
+                            {
+                                position:absolute; 
+                                clip-path: inset(100px 0 100px round 18px 18px 0 0);
+                                left: 0px;
+                                top:-160px;
+                                width: 100%;
+                            }
+                            .ImgM
+                            {
+                                position:absolute; 
+                                clip-path: inset(0 0 0 round 0);
+                                left: 0px;
+                                top:-18px;
+                                width: 300px;
+                                height: 196px;
+
+                            }
+                            .ImgS
+                            {
+                            position:absolute; 
+                            clip-path: inset(1px 0 0 round 18px);
+                            width: 100%;
+                            height: 100%;
+                            bottom:1px;
+                            }
+                            .BgGris2
+            {
+                background-color:#F2F2F2;
+            }
+                            
+#MainFlex
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0.5%;
+    }
+
+/*Corps principal*/
+body
+{
+    font-family: 'Raleway', sans-serif;
+    overflow: auto;
+    
+}
+
+/*En tête*/
+
+
+/*En tête et corps*/
+header, main
+{
+    margin-left: 0px;
+}
+    /*En tête*/
+    #Nom_du_site img
+    {
+        width: 120px;
+        height: 50px;
+
+    }
+    /*Barre de Recherche*/
+    #Barre_de_recherche
+    {
+        width: 400px;
+        border-radius: 10px;
+    }
+        #Icone_Loc
+        {
+            height: 50px;
+            width: 50px;
+            border-radius: 10px 0 0 10px;
+        }
+        #Zone_de_saisie
+        {
+            height: 50px;
+            width: 230px;
+            font-size: 18px;
+            font-weight: bold;
+            border: 0.5px solid #F2F2F2;
+            padding-left: 20px;
+        }
+        #Zone_de_saisie::placeholder
+        {
+            color:black;
+        }
+        #Bouton_Recherche
+        {
+            height: 50px;
+            width: 120px;
+            cursor: pointer;
+            border-radius: 0 10px 10px 0;
+            border: none;
+            font-size: 18px;
+        }
+        #Bouton_autre
+        {
+            display:none
+        }
+    /*Filtres*/
+    #filters {
+    margin-top: 24px;
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-items: center;
+    }
+    #filters h2 {
+        font-size: 20px
+    }
+    #filters ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-left: 33px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .icons_filters {
+         margin-right: 25px;
+        padding:0px;
+        padding-right: 10px;
+        margin-bottom: 15px;
+    }
+
+    #FlexFiltres
+    {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+        #FiltresTitre
+        {
+            margin-right: 20px;
+        }
+        .FiltreTextIcons
+        {
+            border: 2px solid #F2F2F2;
+            height: 50px;
+            border-radius: 30px;
+            margin-right: 20px;
+        }
+        .FiltreTextIcons:hover > .FiltreText
+        {
+            color: #0065FC;
+            cursor: pointer;
+        }
+        .FiltreTextIcons:hover > .FiltreIcons
+        {
+            color: white;
+            background-color: #0065FC;
+            cursor: pointer;
+        }
+            .FiltreIcons
+            {
+                border-radius: 25px;
+                width: 52px;
+                height: 52px;
+                margin-left: -2px;
+            }
+            .FiltreText
+            {
+                height: 50px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 0 25px 25px 0;
+                font-size: 18px;
+            }
+    /*Info*/
+    #Info
+    {
+        display: flex;
+        align-items: center;
+    }
+        #Bulle_Info
+        {
+            width: 24px;
+            height: 24px;
+            border-radius: 25px;
+            border:2px solid #F2F2F2;
+            margin-right: 10px;
+        }
+    /*Conteneur principal*/
+    #ConteneurPrincipal
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /*Hébergement*/
+    #SectionHebergement
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    #BoxHebergement
+    {
+        height: 570px;
+       
+        padding-left: 20px;
+       padding-top: 7px;
+       padding-bottom: 50px;
+       border-radius: 16px;
+       position: relative;
+       overflow:scroll;
+       
+    }
+    .FlexImages
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .BoutonLieux
+    {
+        box-shadow:10px 10px 10px #dddcdc;
+        width: 246px;
+        height: 200px;
+        border-radius: 18px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        /*padding: 5px;*/
+        overflow: hidden;
+        position: relative;
+        -webkit-transition: all 1s ease; /* Safari and Chrome */
+        -moz-transition: all 1s ease; /* Firefox */
+        -ms-transition: all 1s ease; /* IE 9 */
+        -o-transition: all 1s ease; /* Opera */
+        transition: all 1s ease;
+
+    }
+    
+        .Description_image
+        {
+            position: absolute;
+            bottom: 0;
+            border-radius: 0 0 18px 18px;
+            width: 100%;
+            height: 80px;
+        }
+            .TexteDescription
+            {
+                margin-left: 17px;
+                line-height: 0.5em;
+                font-size: 14px;
+            }
+            .Note
+            {
+                display: flex;
+                flex-direction: row;
+                margin-left: 17px;
+                margin-top: 0.5em;
+                
+            }
+        .BoutonLieux:hover
+        { 
+            -webkit-transform:scale(1.10); /* Safari and Chrome */
+            -moz-transform:scale(1.10); /* Firefox */
+            -ms-transform:scale(1.10); /* IE 9 */
+            -o-transform:scale(1.10); /* Opera */
+             transform:scale(1.10);
+        }
+        #AfficherPlus
+        {
+            background:none;
+            border:none;
+            display: none;
+            margin:0;
+            padding:0;
+            cursor: pointer;
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #AfficherPlus:hover
+        {
+            font-size: 20px;
+        }
+        #AfficherMoins
+        {
+            position: absolute;
+            background:none;
+            border:none;
+            cursor: pointer;
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            bottom:30px;
+            margin:0;
+            padding:0;
+            display:none;
+        }
+        #AfficherMoins:hover
+        {
+            font-size: 20px;
+        }
+
+    /*Les plus populaires*/
+    #BoxPopulaire
+    {
+        height: 570px;
+        
+        border-radius: 16px;
+        
+        padding-left: 40px;
+       padding-top: 17px;
+       padding-bottom: 50px;
+       margin-bottom: 65px;
+
+    }
+        #FlexTitrePopulaire
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+            /*Icone pour box populaire*/
+            #Chart
+            {
+              margin-right: 40px;
+            }
+            .BoutonLieuxS
+            {
+                box-shadow:10px 10px 10px #dddcdc;
+                width: 340px;
+                height: 145px;
+                border-radius: 18px;
+                margin-right: 40px;
+                margin-bottom: 30px;
+                /*padding: 5px;*/
+                overflow: hidden;
+                position: relative;
+                -webkit-transition: all 1s ease; /* Safari and Chrome */
+                -moz-transition: all 1s ease; /* Firefox */
+                -ms-transition: all 1s ease; /* IE 9 */
+                -o-transition: all 1s ease; /* Opera */
+                transition: all 1s ease;
+        
+                }
+                .Description_image_S
+                {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                width: 212px;
+                
+                
+                
+                }
+                .TexteDescriptionS
+                {
+                    margin-left: 10px;
+                    font-size: 14px;
+                    padding-right: 50px;
+                    line-height: 0em;
+                }
+                .NoteS
+                {
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: 10px;
+                    line-height: 6.5em;
+                    
+                }
+                .BoutonLieuxS:hover
+                { 
+                    -webkit-transform:scale(1.05); /* Safari and Chrome */
+                    -moz-transform:scale(1.05); /* Firefox */
+                    -ms-transform:scale(1.05); /* IE 9 */
+                    -o-transform:scale(1.05); /* Opera */
+                     transform:scale(1.05);
+                }
+    /*Activités*/
+    #BoxActivites
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       
+         
+    }
+        .ActXL
+        {
+            box-shadow:10px 10px 10px #dddcdc;
+            width: 300px;
+            height: 448px;
+            border-radius: 18px;
+            margin-right: 20px;
+            margin-bottom: 15px;
+            order:1;
+            /*padding: 5px;*/
+            overflow: hidden;
+            position: relative;
+            -webkit-transition: all 1s ease; /* Safari and Chrome */
+            -moz-transition: all 1s ease; /* Firefox */
+            -ms-transition: all 1s ease; /* IE 9 */
+            -o-transition: all 1s ease; /* Opera */
+            transition: all 1s ease;
+            
+        }
+            .ActXL:hover
+                { 
+                    -webkit-transform:scale(1.05); /* Safari and Chrome */
+                    -moz-transform:scale(1.05); /* Firefox */
+                    -ms-transform:scale(1.05); /* IE 9 */
+                    -o-transform:scale(1.05); /* Opera */
+                     transform:scale(1.05);
+                }
+        .Description_image_Act
+        {
+            position: absolute;
+            bottom: 0;
+            border-radius: 0 0 0 0;
+            width: 100%;
+            height: 55px;
+        }
+        .TexteDescription_Act
+        {
+            margin-left: 10px;
+            font-size: 14px;
+            padding-left: 10px;
+            padding-top: 12px;
+            line-height: 0em;
+        }
+        .ActL
+        {
+            box-shadow:10px 10px 10px #dddcdc;
+            width: 300px;
+            height: 237px;
+            border-radius: 18px;
+            margin-right: 20px;
+            margin-bottom: 15px;
+            order:2;
+            /*padding: 5px;*/
+            overflow: hidden;
+            position: relative;
+            -webkit-transition: all 1s ease; /* Safari and Chrome */
+            -moz-transition: all 1s ease; /* Firefox */
+            -ms-transition: all 1s ease; /* IE 9 */
+            -o-transition: all 1s ease; /* Opera */
+            transition: all 1s ease;
+        
+        }
+            .ActL:hover
+                { 
+                    -webkit-transform:scale(1.05); /* Safari and Chrome */
+                    -moz-transform:scale(1.05); /* Firefox */
+                    -ms-transform:scale(1.05); /* IE 9 */
+                    -o-transform:scale(1.05); /* Opera */
+                     transform:scale(1.05);
+                }
+        .ActM
+        {
+            box-shadow:10px 10px 10px #dddcdc;
+            width: 300px;
+            height: 196px;
+            border-radius: 18px;
+            margin-right: 20px;
+            margin-bottom: 15px;
+            margin-top: 3px;
+            order:4;
+            /*padding: 5px;*/
+            overflow: hidden;
+            position: relative;
+            -webkit-transition: all 1s ease; /* Safari and Chrome */
+            -moz-transition: all 1s ease; /* Firefox */
+            -ms-transition: all 1s ease; /* IE 9 */
+            -o-transition: all 1s ease; /* Opera */
+            transition: all 1s ease;
+        
+        }
+            .ActM:hover
+                { 
+                    -webkit-transform:scale(1.05); /* Safari and Chrome */
+                    -moz-transform:scale(1.05); /* Firefox */
+                    -ms-transform:scale(1.05); /* IE 9 */
+                    -o-transform:scale(1.05); /* Opera */
+                     transform:scale(1.05);
+                }
+        .ActS
+        {
+            box-shadow:10px 10px 10px #dddcdc;
+            width: 300px;
+            height: 165px;
+            border-radius: 18px;
+            margin-right: 20px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            order:3;
+            /*padding: 5px;*/
+            overflow: hidden;
+            position: relative;
+            -webkit-transition: all 1s ease; /* Safari and Chrome */
+            -moz-transition: all 1s ease; /* Firefox */
+            -ms-transition: all 1s ease; /* IE 9 */
+            -o-transition: all 1s ease; /* Opera */
+            transition: all 1s ease;
+        
+        }
+            .ActS:hover
+                { 
+                    -webkit-transform:scale(1.05); /* Safari and Chrome */
+                    -moz-transform:scale(1.05); /* Firefox */
+                    -ms-transform:scale(1.05); /* IE 9 */
+                    -o-transform:scale(1.05); /* Opera */
+                     transform:scale(1.05);
+                }
+
+/*Pied de page*/
+#PiedDePage
+{
+    display: flex;
+    flex-direction: row;
+    padding-left: 3.5%;
+    height: 400px;
+    width: 100%;
+}
+    .EspaceTitre
+    {
+        margin-right: 13%;
+    }
+    .EspaceLiens
+    {
+        line-height: 2.5em;
+    }
+    .Hidden
+    {
+        display:block;
+    }
+}

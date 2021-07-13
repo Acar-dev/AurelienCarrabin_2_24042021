@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styleDesktop.css" media="all and (min-width: 1026px)">
+    <link rel="stylesheet" href="stylePhoneLandscape.css" media="all and (min-width: 451px) and (max-width:736px)">
+    <link rel="stylesheet" href="stylePhonePortrait.css" media="all and (min-width: 320px) and (max-width:480px)">
+    <link rel="stylesheet" href="styleTabletLandscape.css" media="all and (min-width: 768px) and (max-width:1025px)">
+    <link rel="stylesheet" href="styleTabletPortrait.css" media="all and (min-width: 481px) and (max-width:768px)">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,700;1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e7708a28a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--En tête-->
+    <main id="MainFlex">
+    <header>
+
+        <!--Navigation-->
+        <nav>
+            <!--Déplacement vers ancre-->
+                <div class="FlexTop">
+
+                    <!--Nom du site-->
+                    <div id="Nom_du_site" class="PaddingTop">
+                        <img src="images/logo/Reservia@3x.png" alt="Logo Reservia"/>
+                    </div>
+                        <div class="sizeLiens FlexRow">
+                            <div id="AncreNav">  
+                                <div class="BorderLien FlexCentre">
+                                    <div><a id="BoutonNavHeb" href="#BoxHebergement" onclick="Heb()">Hébergements</a><script src="Script.js"></script></div>
+                                </div>
+                                <div class="BorderLien FlexCentre">
+                                    <div><a id="BoutonNavAct" href="#BoxActivites" onclick="Act()">Activités</a><script src="Script.js"></script></div>
+                                </div>
+                            </div>  
+                            <div class="BorderLien FlexCentre MarginRight">
+                                <div><a id="HovInsc" class="Bleu DecorationNone Gras" href="#">S'inscrire</a></div>
+                            </div>
+                        </div>
+                </div>
+                <div id="NAVportable">
+                    <div class="BorderLien FlexCentre">
+                        <div><a id="BoutonNavHebP" href="#BoxHebergement" onclick="Heb()">Hébergements</a><script src="Script.js"></script></div>
+                    </div>
+                    <div class="BorderLien FlexCentre">
+                        <div><a id="BoutonNavActP" href="#BoxActivites" onclick="Act()">Activités</a><script src="Script.js"></script></div>
+                    </div>
+                </div>
+        </nav>    
+    </header>
+
+    <div>
+    <!--Corps principal-->
+    <div>
+
+        <!--En tête principal-->   
+        <div>   
+
+            <!--Texte d'accueil-->
+            <h2>Touver votre hébergement pour des vacances de rêve</h2>
+            <p>En plein centre ville ou en pleine   nature</p>
+            
+        </div>
+
+       
+        <!--Barre de recherche-->
+        <div id="Barre_de_recherche" class="FlexCentre">
+        
+                <!--logo localisation-->
+                <div id="Icone_Loc" class="BgGris FlexCentre"><i class="fas fa-map-marker-alt"></i></div>
+
+                <!--Zone de saisie-->
+                <div >
+                    <input 
+                    id="Zone_de_saisie" 
+                    class="FlexCentre" 
+                    type="search" 
+                    placeholder="Marseille, France"
+                    >
+                </div>
+
+                <!--Boutton-->
+                <!--<div id="Bouton_Recherche" class="FlexCentre BgBleu Blanc Gras">Rechercher</div>-->
+                <div>
+                    <input
+                     id="Bouton_Recherche"
+                     class="FlexCentre BgBleu Blanc Gras" 
+                     type="button" 
+                     value="Rechercher">
+                </div>
+                <button id="Bouton_autre" class="FlexCentre BgBleu Blanc Gras" >
+                    <i class="fas fa-search"></i>
+                </button>
+        
+            </div>
+
+        
+
+
+        <!--Filtres-->
+        <div id="filters">
+            <h2>Filtres</h2>
+            <ul id="filter_ul">
+                <li class="icons_filters FiltreTextIcons FlexBetween RetourAlaLigne">
+                    <div class="FiltreIcons Bleu BgBleuClair FlexCentre"><i class="fas fa-money-bill-wave"></i></div>
+                    <div class="FiltreText FlexCentre Gras">Économique</div></li>
+                <li class="icons_filters FiltreTextIcons FlexBetween RetourAlaLigne">
+                    <div class="FiltreIcons Bleu BgBleuClair FlexCentre"><i class="fas fa-child"></i></div>
+                    <div class="FiltreText FlexCentre Gras">Familial</div></li>
+                <li class="icons_filters FiltreTextIcons FlexBetween RetourAlaLigne">
+                    <div class="FiltreIcons Bleu BgBleuClair FlexCentre"><i class="fas fa-heart"></i></div>
+                    <div class="FiltreText FlexCentre Gras">Romantique</div></li>
+                <li class="icons_filters FiltreTextIcons FlexBetween RetourAlaLigne">
+                    <div class="FiltreIcons Bleu BgBleuClair FlexCentre"><i class="fas fa-dog"></i></div>
+                    <div class="FiltreText FlexCentre Gras">Animaux autorisés</div></li>
+            </ul>
+        </div>
+        
+        <!--<section id="FlexFiltres">-->
+            <!--Titre Filtres-->
+        <!--<div id="FiltresTitre"><h3>Filtres</h3></div>
+            <div id="FiltreManip">-->
+                <!--Filtre Economie-->
+                <!--<div class="FiltreTextIcons FlexBetween RetourAlaLigne">
+                    <div class="FiltreIcons Bleu BgBleuClair FlexCentre"><i class="fas fa-money-bill-wave fa-lg"></i></div>
+                    <div class="FiltreText FlexCentre Gras">Economique</div>
+                </div>-->
+
+                <!--Filtre Familial-->
+                <!--<div class="FiltreTextIcons FlexBetween">
+                    <span  class="FiltreIcons Bleu BgBleuClair FlexCentre"><i class="fas fa-child fa-lg"></i></span>
+                    <span class="FiltreText FlexCentre Gras">Familial</span>
+                </div>-->
+
+                <!--Filtre Romantique-->
+                <!--<div class="FiltreTextIcons FlexBetween">
+                    <div class="FiltreIcons Bleu BgBleuClair FlexCentre"><i class="fas fa-heart fa-lg"></i></div>
+                    <div class="FiltreText FlexCentre Gras">Romantique</div>
+                </div>-->
+
+                <!--Filtre Animaux Autorisés-->
+                <!--<div class="FiltreTextIcons FlexBetween">
+                    <div class="FiltreIcons Bleu BgBleuClair FlexCentre"><i class="fas fa-dog fa-lg"></i></div>
+                    <div class="FiltreText FlexCentre Gras">Animaux autorisés</div>
+                </div>
+            </div>
+
+        </section>-->
+        
+
+        <!--Info-->
+        <div id="Info">
+
+            <div id="Bulle_Info" class="FlexCentre Bleu"><i class="fas fa-info fa-xs"></i></div>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+
+        <!--Conteneur principal-->
+        <article id="ConteneurPrincipal">
+
+            <!--Box hébergement-->
+            <section id="BoxHebergement" class="BgGris2">
+
+                <!--Titre section hébergement-->
+                <h2>Hébergements à Marseille</h2>
+
+                    <!--Flexbox des lieux-->
+                    <div class="FlexImages">
+
+                        <!--1er Lieux:Auberge la Cannebière-->
+                        <div class="BoutonLieux BgBlanc">
+                            <a href="#">
+                                <div><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Image Auberge la Cannebière" class="Lsmall"></div>
+                                <div class="Description_image BgBlanc DecorationNone Noir">
+                                    <div class="TexteDescription">
+                                        <h3>Auberge la Cannebière</h3>
+                                        Nuit à partir de <b>25€</b>
+                                    </div>
+                                    <div class="Note">
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Gris"><i class="fas fa-star fa-sm"></i></div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        </div>
+
+                        <!--2ème Lieux:Hôtel du port-->
+                        <div class="BoutonLieux BgBlanc">
+                            <a href="#">
+                                <div><img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Image Hôtel du port" class="Lsmall"></div>
+                                <div class="Description_image BgBlanc DecorationNone Noir">
+                                    <div class="TexteDescription">
+                                        <h3>Hôtel du port</h3>
+                                        Nuit à partir de <b>52€</b>
+                                    </div>
+                                    <div class="Note">
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        </div>
+
+                        <!--3ème Lieux:Hôtel Les mouettes -->
+                        <div class="BoutonLieux BgBlanc">
+                            <a href="#">
+                                <div><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Image Hôtel Les mouettes" class="Lsmall"></div>
+                                <div class="Description_image BgBlanc DecorationNone Noir">
+                                    <div class="TexteDescription">
+                                        <h3>Hôtel Les mouettes</h3>
+                                        Nuit à partir de <b>76€</b>
+                                    </div>
+                                    <div class="Note">
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Gris"><i class="fas fa-star fa-sm"></i></div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        </div>
+
+                        <!--4ème Lieux:Hôtel de la mer-->
+                        <div class="BoutonLieux BgBlanc">
+                            <a href="#">
+                                <div><img src="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Image Hôtel de la mer" class="PSpecialBig"></div>
+                                <div class="Description_image BgBlanc DecorationNone Noir">
+                                    <div class="TexteDescription">
+                                        <h3>Hôtel de la mer</h3>
+                                        Nuit à partir de <b>46€</b>
+                                    </div>
+                                    <div class="Note">
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Gris"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Gris"><i class="fas fa-star fa-sm"></i></div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        </div>
+
+                        <!--5ème Lieux:Auberge Le Panier-->
+                        <div class="BoutonLieux BgBlanc">
+                            <a href="#">
+                                <div><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Image Auberge Le Panier" class="PSpecialPaysage"></div>
+                                <div class="Description_image BgBlanc DecorationNone Noir">
+                                    <div class="TexteDescription">
+                                        <h3>Auberge Le Panier</h3>
+                                        Nuit à partir de <b>23€</b>
+                                    </div>
+                                    <div class="Note">
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Gris"><i class="fas fa-star fa-sm"></i></div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        </div>
+
+                        <!--6ème Lieux:Hôtel chez Amina-->
+                        <div class="BoutonLieux BgBlanc">
+                            <a href="#">
+                                <div><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Image Hôtel chez Amina" class="PSpecialPortrait"></div>
+                                <div class="Description_image BgBlanc DecorationNone Noir">
+                                    <div class="TexteDescription">
+                                        <h3>Hôtel chez Amina</h3>
+                                        Nuit à partir de <b>96€</b>
+                                    </div>
+                                    <div class="Note">
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        </div>
+
+                        <!--7ème Lieux:Hôtel Le soleil du matin Hidden-->
+                        <div class="BoutonLieux BgBlanc Hidden">
+                            <a href="#">
+                                <div><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image Hôtel Le soleil du matin" class="PSpecialPaysage"></div>
+                                <div class="Description_image BgBlanc DecorationNone Noir">
+                                    <div class="TexteDescription">
+                                        <h3>Hôtel Le soleil du matin</h3>
+                                        Nuit à partir de <b>128€</b>
+                                    </div>
+                                    <div class="Note">
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        </div>
+
+                        <!--8ème Lieux:Au coeur de l'eau Chambres d'hôtes Hidden-->
+                        <div class="BoutonLieux BgBlanc Hidden">
+                            <a href="#">
+                                <div><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Image Au coeur de l'eau Chambres d'hôtes" class="Lsmall"></div>
+                                <div class="Description_image BgBlanc DecorationNone Noir">
+                                    <div class="TexteDescription">
+                                        <h3>
+                                            Au coeur de l'eau
+                                        </h3>
+                                            Nuit à partir de <b>71€</b>
+                                    </div>
+                                    <div class="Note">
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Gris"><i class="fas fa-star fa-sm"></i></div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        </div>
+
+                        <!--9ème Lieux:Hôtel Tout bleu et Blanc Hidden-->
+                        <div class="BoutonLieux BgBlanc Hidden">
+                            <a href="#">
+                                <div><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Image Hôtel chez Amina" class="PSpecialPortrait"></div>
+                                <div class="Description_image BgBlanc DecorationNone Noir">
+                                    <div class="TexteDescription">
+                                        <h3>Hôtel Tout bleu et Blanc</h3>
+                                        Nuit à partir de <b>68€</b>
+                                    </div>
+                                    <div class="Note">
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                        <div class="Gris"><i class="fas fa-star fa-sm"></i></div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--Boutton afficher plus-->
+                    <div class="MarginTop">
+                        <button id="AfficherPlus" type="button" onclick="Plus();">Afficher Plus</button>
+                        <script src="Script.js"></script>
+                    </div>
+
+                    <!--Boutton afficher moins-->
+                    <div>
+                    <button id="AfficherMoins" type="button" onclick="Moins();">Afficher Moins</button>
+                    <script src="Script.js"></script>
+                    </div>
+                </section>
+            
+            <!--Les plus populaires-->
+            <section id="BoxPopulaire" class="BgGris">
+
+                <!--Titre section Populaire--> 
+                <div id="FlexTitrePopulaire">
+                    <h2>Les plus populaires</h2>
+                    <div class><i class="fas fa-chart-line fa-2x" id="Chart"></i></div>
+                </div> 
+
+                 <!--Flexbox section populaire--> 
+                <div class="FlexColonne">
+
+                    <!--1er Lieux:Hôtel Le soleil du matin-->
+                    <div class="BoutonLieuxS BgBlanc">
+                        <a href="#">
+                            <div><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image Hôtel Le soleil du matin" class="PSpecialPopulaire"></div>
+                            <div class="Description_image_S BgBlanc DecorationNone Noir">
+                                <div class="TexteDescriptionS">
+                                    <div class="LineHeight">
+                                        <h3>Hôtel Le soleil du matin</h3>
+                                    </div>
+                                    Nuit à partir de <b>128€</b>
+                                </div>
+                                <div class="NoteS">
+                                    <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                    <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                    <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                    <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                    <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                </div>
+
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <!--2ème Lieux:Au coeur de l'eau Chambres d'hôtes-->
+                    <div class="BoutonLieuxS BgBlanc">
+                        <a href="#">
+                            <div><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Image Au coeur de l'eau Chambres d'hôtes" class="PSpecialPopulaire2"></div>
+                            <div class="Description_image_S BgBlanc DecorationNone Noir">
+                                <div class="TexteDescriptionS">
+                                    <div class="LineHeight">
+                                        <h3>Au coeur de l'eau<br>Chambres d'hôtes</h3>
+                                    </div>
+                                    Nuit à partir de <b>71€</b>
+                                </div>
+                                <div class="NoteS">
+                                    <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                    <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                    <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                    <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                    <div class="Gris"><i class="fas fa-star fa-sm"></i></div>
+                                </div>
+
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+                
+                <!--3ème Lieux:Hôtel Tout bleu et Blanc-->
+                <div class="BoutonLieuxS BgBlanc">
+                    <a href="#">
+                        <div><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Image Hôtel Tout bleu et blanc" class="PSpecialPopulaire3"></div>
+                        <div class="Description_image_S BgBlanc DecorationNone Noir">
+                            <div class="TexteDescriptionS">
+                                <div class="LineHeight">
+                                    <h3>Hôtel Tou bleu et blanc</h3>
+                                </div>
+                                Nuit à partir de <b>68€</b>
+                            </div>
+                            <div class="NoteS">
+                                <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                <div class="Bleu"><i class="fas fa-star fa-sm"></i></div>
+                                <div class="Gris"><i class="fas fa-star fa-sm"></i></div>
+                            </div>
+
+                        </div>
+
+                    </a>
+                </div>
+
+
+
+            </section>
+        
+            
+
+        </article>
+        
+
+        <!--Section activitées-->
+        <section id="Activites">
+            <h2>Activités à Marseille</h2>
+            
+            <div id="BoxActivites">
+
+                <!--1er Lieux: Vieux Port-->
+                <div class="ActXL BgBlanc">
+                    <a href="#">
+                        <div><img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image Vieux Port" class="ImgXL"></div>
+                        <div class="Description_image_Act BgBlanc DecorationNone Noir">
+                            <div class="TexteDescription_Act">
+                                <h3>Vieux Port</h3>
+                            </div>
+                            
+                        </div>
+
+                    </a>
+                </div>
+
+                <!--2ème Lieux: Fort de Pomègues-->
+                <div class="ActL BgBlanc">
+                    <a href="#">
+                        <div><img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image Fort de Pomègues" class="ImgL"></div>
+                        <div class="Description_image_Act BgBlanc DecorationNone Noir">
+                            <div class="TexteDescription_Act">
+                                <h3>Fort de Pomègues</h3>
+                            </div>
+                            
+                        </div>
+
+                    </a>
+                </div>
+
+                <!--3ème Lieux: Île du Frioul-->
+                <div class="ActS BgBlanc">
+                    <a href="#">
+                        <div><img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image Île du Frioul" class="ImgS"></div>
+                        <div class="Description_image_Act BgBlanc DecorationNone Noir">
+                            <div class="TexteDescription_Act">
+                                <h3>Île du Frioul</h3>
+                            </div>
+                            
+                        </div>
+
+                    </a>
+                </div>
+
+                <!--4ème Lieux: Parc National des Calanques-->
+                <div class="ActXL BgBlanc">
+                    <a href="#">
+                        <div><img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image Parc National des Calanques" class="ImgXL2"></div>
+                        <div class="Description_image_Act BgBlanc DecorationNone Noir">
+                            <div class="TexteDescription_Act">
+                                <h3>Parc National des Calanques</h3>
+                            </div>
+                            
+                        </div>
+
+                    </a>
+                </div>
+
+                <!--5ème Lieux: Notre-Dame-de-la-Garde -->
+                <div class="ActM BgBlanc">
+                    <a href="#">
+                        <div><img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image Notre-Dame-de-la-Garde" class="ImgM"></div>
+                        <div class="Description_image_Act BgBlanc DecorationNone Noir">
+                            <div class="TexteDescription_Act">
+                                <h3>Notre-Dame-de-la-Garde</h3>
+                            </div>
+                            
+                        </div>
+
+                    </a>
+                </div>
+
+                <!--6ème Lieux: Parc Longchamp -->
+                <div class="ActM BgBlanc">
+                    <a href="#">
+                        <div><img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image Parc Longchamp" class="ImgM"></div>
+                        <div class="Description_image_Act BgBlanc DecorationNone Noir">
+                            <div class="TexteDescription_Act">
+                                <h3>Parc Longchamp</h3>
+                            </div>
+                            
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        
+    </div>
+</div>
+    </main>
+
+    <!--Pied de page-->
+    <footer id="PiedDePage" class="BgGris">
+
+        <!--A propos-->
+        <div class="EspaceTitre">
+            <h2>A propos</h2>
+            <div class="EspaceLiens"><a href="#" class="Noir DecorationNone Size20">Fonctionnement du site</a></div>
+            <div class="EspaceLiens"><a href="#" class="Noir DecorationNone Size20">Conditions générales de vente</a></div>
+            <div class="EspaceLiens"><a href="#" class="Noir DecorationNone Size20">Données et confidentialité</a></div>
+        </div>
+
+        <!--Nos hébergements-->
+        <div class="EspaceTitre">
+            <h2>Nos hébergements</h2>
+            <div class="EspaceLiens"><a href="#" class="Noir DecorationNone Size20">Charte qualité</a></div>
+            <div class="EspaceLiens"><a href="#" class="Noir DecorationNone Size20">Soumettre votre hôtel</a></div>
+        </div>
+
+        <!--Assistance-->
+        <div class="EspaceTitre">
+            <h2>Assistance</h2>
+            <div class="EspaceLiens"><a href="#" class="Noir DecorationNone Size20">Centre d'aide</a></div>
+            <div class="EspaceLiens"><a href="#" class="Noir DecorationNone Size20">Nous contacter</a></div>
+        </div>
+    </footer>
+</body>
+</html>
