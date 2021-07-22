@@ -1,5 +1,5 @@
 /* Version portable */
-@media all and (min-device-width: 451px) and (max-device-width: 736px) and (orientation:landscape)
+@media all and (min-width: 451px) and (max-width: 736px) and (orientation:landscape)
 
 {
 
@@ -61,7 +61,7 @@ width: 50%;
                         }
                         .PSpecialPaysage
                         {
-                            object-fit: absolute;
+                            object-fit: contain;
                             clip-path: inset(0 0 0 round 15px);                        
                             
                             width: 97%;
@@ -73,8 +73,6 @@ width: 50%;
                         .PSpecialBig
                         {
                             position: absolute;                   
-                            
-                            /*clip: rect(50px auto auto auto);*/
                             clip-path: inset(50px 0 0 round 15px);
                             top: -50px;
                             width: 97%;
@@ -85,8 +83,6 @@ width: 50%;
                         .PSpecialPortrait
                         {
                             position: absolute;                   
-                            
-                            /*clip: rect(50px auto auto auto);*/
                             clip-path: inset(120px 0 0 round 15px);
                             top:-120px;
                             width: 97%;
@@ -98,7 +94,8 @@ width: 50%;
                         {
                             
                             position:absolute;                     
-                            clip-path: inset(0 40px 0 round 15px 0 0 15px );
+                            clip-path: inset(0 40px 0);
+                            border-radius: 15px 0 0 15px;
                             left:-40px;
                             height: 135px;
                             margin-left: 5px;
@@ -111,7 +108,8 @@ width: 50%;
                         {
                             
                             position:absolute;                     
-                            clip-path: inset(0 25px 0 round 15px 0 0 15px );
+                            clip-path: inset(0 25px 0);
+                            border-radius: 15px 0 0 15px;
                             left:-25px;
                             height: 135px;
                             margin-left: 5px;
@@ -124,7 +122,8 @@ width: 50%;
                         {
                             
                             position:absolute;                     
-                            clip-path: inset(30px 0 25px round 15px 0 0 15px );
+                            clip-path: inset(30px 0 25px);
+                            border-radius: 15px 0 0 15px;
                             left:0;
                             top:-30px;
                             height: 190px;
@@ -138,7 +137,7 @@ width: 50%;
                             .ImgXL
                             {
                                 position:absolute; 
-                                clip-path: inset(150px 0 0 round 0 0 0 0 );
+                                clip-path: inset(150px 0 0);
                                 
                                 top:-150px;
                                 left:-212px;
@@ -153,7 +152,8 @@ width: 50%;
                             .ImgL
                             {
                                 position:absolute; 
-                                clip-path: inset(100px 0 100px round 18px 18px 0 0);
+                                clip-path: inset(100px 0 100px);
+                                border-radius: 18px 18px 0 0;
                                 left: 0px;
                                 top:-160px;
                                 width: 100%;
