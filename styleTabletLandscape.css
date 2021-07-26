@@ -17,12 +17,12 @@
     }
     #BoxHebergement
     {
-        width: 555px;
+        width: 47%;
     }
     #BoxPopulaire
     {
-        width: 380px;
-        margin-left: 10px;
+        width: 47%;
+        margin-left: 1%;
     }
     /*
     #AncreNav
@@ -50,7 +50,7 @@
 /*Espacements*/
 .sizeLiens
 {
-    width: 40%;
+    width: 50%;
 }
 
 /*Tailles d'images*/
@@ -692,14 +692,14 @@ header, main
 {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 70%;
     height: 400px;
     margin-left: 10%;
    
 }
     .EspaceTitre
     {
-        margin-right: 13%;
+        margin-right: 5%;
     }
     .EspaceLiens
     {

@@ -1,5 +1,5 @@
 /* Version portable */
-@media all and (min-width: 320px) and (max-width: 480px) and (orientation:portrait)
+@media all and (min-width: 320px) and (max-width: 767px) and (orientation:portrait)
 
 {
   
@@ -14,45 +14,59 @@
     {
         white-space: nowrap;
     }*/
+    #TitreH1
+    {
+        margin-left: 3.5%;
+    }
     #NAVportable
                     {
                         display: block;
                         display: flex;
                         flex-direction: row;
-                        justify-content: space-evenly;
+                        justify-content: space-around;
                         margin-top: 30px;
-                        margin-left: 2%;
                         
+                        width: 100%;
+                        padding-bottom: 20px;
                         
                         margin-bottom: 30px;
                         
                         
                     }
+                    #box
+                    {
+                        width: 50%;
+                        
+                        border-bottom: 4px solid #F2F2F2;
+                    }
+                    #box2
+                    {
+                        width: 50%;
+                        height: 50px;
+                        
+                        border-bottom: 4px solid #F2F2F2;
+                    }
                     #BoutonNavHebP
                     {
                         text-decoration: none;
                         color: black;
-                        padding: 20px 50%;
-                        margin-left: -80%;
+                       
                         text-align: center;
-                        border-bottom: 4px solid #F2F2F2;
-                        
-                        
-
                     }
                     
-                    #BoutonNavHebP:hover 
+                    #box:hover 
                     {
                         
                         border-bottom:4px solid #0065FC !important;
                         color: #0065FC !important;
-                        
-                       
-                        
                     }
-                    #boutonNavHebP:focus
+                    #BoutonNavHebP:hover
                     {
-                        background-color: aquamarine;
+                        color: #0065FC !important;
+                    }
+                    #box2:focus
+                    {
+                        
                         border-bottom:4px solid #0065FC;
                         color: #0065FC;
                     }
@@ -63,18 +77,17 @@
                         color: black;
                         
                         text-align: center;
-                        padding: 20px 102%;
-                        margin-left: -105%;                        
-                        border-bottom: 4px solid #F2F2F2;
-                        
-
                     }
                     
-                    #BoutonNavActP:hover
+                    #box2:hover
                     {
                         border-bottom:4px solid #0065FC !important;
                         color: #0065FC !important;
                         
+                    }
+                    #BoutonNavActP:hover
+                    {
+                        color: #0065FC !important;
                     }
     .FlexRow
     {
@@ -500,6 +513,7 @@ header, main
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .BoutonLieux
     {
@@ -663,6 +677,7 @@ header, main
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        align-items: center;
         /*margin-left: -1px;*/
         padding-left: 4%;
        

@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="styleDesktop.css" media="all and (min-width: 1345px)">
     <link rel="stylesheet" href="styleLaptop.css" media="all and (min-width: 1025px) and (max-width:1344px)">
     <link rel="stylesheet" href="stylePhoneLandscape.css" media="all and (min-width: 451px) and (max-width:736px) and (orientation:landscape)">
-    <link rel="stylesheet" href="stylePhonePortrait.css" media="all and (min-width: 320px) and (max-width:480px) and (orientation:portrait)">
+    <link rel="stylesheet" href="stylePhonePortrait.css" media="all and (min-width: 320px) and (max-width:766px) and (orientation:portrait)">
     <link rel="stylesheet" href="styleTabletLandscape.css" media="all and (min-width: 768px) and (max-width:1024px) and (orientation:landscape)">
-    <link rel="stylesheet" href="styleTabletPortrait.css" media="all and (min-width: 481px) and (max-width:768px) and (orientation:portrait)">
+    <link rel="stylesheet" href="styleTabletPortrait.css" media="all and (min-width: 767px) and (max-width:1024px) and (orientation:portrait)">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,700;1,600&display=swap" rel="stylesheet">
@@ -47,10 +47,10 @@
                         </div>
                 </div>
                 <div id="NAVportable">
-                    <div class="BorderLien FlexCentre">
+                    <div class="BorderLien FlexCentre" id="box">
                         <div><a id="BoutonNavHebP" href="#BoxHebergement" onclick="Heb()">Hébergements</a><script src="Script.js"></script></div>
                     </div>
-                    <div class="BorderLien FlexCentre">
+                    <div class="BorderLien FlexCentre" id="box2">
                         <div><a id="BoutonNavActP" href="#BoxActivites" onclick="Act()">Activités</a><script src="Script.js"></script></div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
     <div id="ConteneurPageComplete">
 
         <!--En tête principal-->   
-        <div>   
+        <div id="TitreH1">   
 
             <!--Texte d'accueil-->
             <h1>Touver votre hébergement pour des vacances de rêve</h1>
