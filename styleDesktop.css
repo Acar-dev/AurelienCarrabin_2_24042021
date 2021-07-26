@@ -1,4 +1,4 @@
-@media all and (min-width: 1023px)
+@media all and (min-width: 1345px)
 {
 
     html body
@@ -7,7 +7,7 @@
     }
     header
     {
-        width: 1350px;
+        width: 100%;
     }
     
     .FlexRow

@@ -27,7 +27,29 @@ function Moins()
        Hide[i].style.display='none';
    }
 }
-
+function PlusL()
+{
+   document.getElementById('BoxHebergement').style.height="1270px";
+   document.getElementById('AfficherPlusL').style.display = "none";
+   document.getElementById('AfficherMoinsL').style.display = "block";
+   for(var i=0;i<Hide.length;i++)
+   {
+       Hide[i].style.display='block';
+   }
+{
+    
+}
+}
+function MoinsL()
+{
+   document.getElementById('BoxHebergement').style.height="770px";
+   document.getElementById('AfficherMoinsL').style.display = "none";
+   document.getElementById('AfficherPlusL').style.display = "block";
+   for(var i=0;i<Hide.length;i++)
+   {
+       Hide[i].style.display='none';
+   }
+}
 function Act()
 {
     document.getElementById('BoutonNavAct').style.color="#0065FC";

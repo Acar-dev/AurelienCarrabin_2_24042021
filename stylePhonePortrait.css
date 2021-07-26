@@ -567,6 +567,15 @@ header, main
         {
             font-size: 20px;
         }
+        #AfficherPlusL
+        {
+            display:none;
+        }
+        #AfficherMoinsL
+        {
+            
+            display:none;
+        }
 
     /*Les plus populaires*/
     #BoxPopulaire

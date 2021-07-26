@@ -108,8 +108,7 @@
                         .PSpecialPopulaire
                         {
                             
-                            position:absolute;                     
-                            clip-path: inset(0 40px 0);
+                            object-position: -40px;                           
                             border-radius: 15px 0 0 15px;
                             left:-40px;
                             height: 135px;
@@ -122,8 +121,7 @@
                         .PSpecialPopulaire2
                         {
                             
-                            position:absolute;                     
-                            clip-path: inset(0 25px 0);
+                            object-position: -40px;                           
                             border-radius: 15px 0 0 15px;
                             left:-25px;
                             height: 135px;
@@ -136,8 +134,7 @@
                         .PSpecialPopulaire3
                         {
                             
-                            position:absolute;                     
-                            clip-path: inset(30px 0 25px);
+                            object-position: -1px;                           
                             border-radius: 15px 0 0 15px;
                             left:0;
                             top:-30px;
@@ -365,8 +362,8 @@ header, main
     /*Conteneur principal*/
     #ConteneurPrincipal
     {
-        /*display: flex;
-        flex-direction: row;*/
+        display: flex;
+        flex-direction: row;
         width: 100%;
         margin-right: -30px;
         margin-left: -8px;
@@ -391,6 +388,7 @@ header, main
        border-radius: 16px;
        position: relative;
        overflow:scroll;
+       overflow-x:hidden
        
     }
     .FlexImages
@@ -465,6 +463,15 @@ header, main
         {
             font-size: 20px;
         }
+        #AfficherPlusL
+        {
+            display:none;
+        }
+        #AfficherMoinsL
+        {
+            
+            display:none;
+        }
 
     /*Les plus populaires*/
     #BoxPopulaire
@@ -472,7 +479,7 @@ header, main
         height: 560px;
         
         border-radius: 16px;
-        
+        margin-left: 1%;
         padding-left: 17px;
        padding-top: 17px;
        padding-bottom: 50px;
@@ -682,13 +689,20 @@ header, main
 #PiedDePage
 {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    
+}
+#FlexPDP
+{
+    display: flex;
     flex-direction: row;
-    padding-left: 3.5%;
-    height: 500px;
-    width: 96.5%;
-    
-    
-    
+    /*width: 100%;*/
+    height: 400px;
+    margin-left: 3.4%;
+   
 }
     .EspaceTitre
     {
@@ -697,8 +711,9 @@ header, main
     .EspaceLiens
     {
         line-height: 2.5em;
+        
     }
     .Hidden
     {
-        display: block;
+        display: none;
     }
