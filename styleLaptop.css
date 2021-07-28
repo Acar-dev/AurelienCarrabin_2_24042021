@@ -1,4 +1,4 @@
-@media all and (min-width: 1025px) and (max-width:1344px)
+@media all and (min-width: 1025px) and (max-width:1390px)
 {
 
     html body
@@ -7,9 +7,27 @@
     }
     header
     {
+        display: flex;
+        flex-direction: row;
         width: 100%;
+        justify-content: space-between;
+        
+        padding-top: 25px;
     }
-    
+    #Nom_du_site
+    {
+        margin-top: -40px;
+    }
+    #HovInsc
+    {
+        margin-top: 16px;
+        margin-right: 3.4%;
+        
+    }
+    nav
+    {
+        margin-left:45%;
+    }
     .FlexRow
     {
         width: auto;
@@ -29,17 +47,72 @@
         width: 40%;
         margin-left: 1%;
     }
-    /*
-    #AncreNav
+    /*Habillage Nav*/
+    .DecorationNone
     {
-        margin-left: 50%;
+        text-decoration: none;
     }
-    .MarginRight
+    #Nom_du_site
     {
-        margin-right: 1%;
+        margin-top: -30px;
+        margin-left: -20px;
     }
-    */
+     
+     #AncreNav
+     {
+         display:flex;
+         flex-direction: row;
+         list-style: none;
+         
+         
+     }
+     #NAVportable
+     {
+         display: none;
+     }
+     #BoutonNavHeb
+     {
+         text-decoration: none;
+         color: black;
+         
+         text-align: center;
+         padding: 37px 10px;
 
+     }
+     
+     #BoutonNavHeb:hover 
+     {
+         
+         border-top:4px solid #0065FC !important;
+         color: #0065FC !important;
+         
+        
+         
+     }
+     #boutonNavHeb:focus
+     {
+         background-color: aquamarine;
+         border-top:4px solid #0065FC;
+         color: #0065FC;
+     }
+     
+     #BoutonNavAct
+     {
+         text-decoration: none;
+         color: black;
+         
+         text-align: center;
+         padding: 37px 50px;
+         
+
+     }
+     
+     #BoutonNavAct:hover
+     {
+         border-top:4px solid #0065FC !important;
+         color: #0065FC !important;
+         
+     }
 .FlexTop
     {
         display: flex;
@@ -198,6 +271,7 @@
         flex-direction: column;
         align-items: center;
         margin-left: 3.5%;
+        
     }
 
 /*Corps principal*/

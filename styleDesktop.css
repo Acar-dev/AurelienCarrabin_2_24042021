@@ -1,4 +1,4 @@
-@media all and (min-width: 1345px)
+@media all and (min-width: 1391px)
 {
 
     html body
@@ -7,8 +7,98 @@
     }
     header
     {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         width: 100%;
+        
+        
+        padding-top: 25px;
     }
+    
+    /*Habillage Nav*/
+    .DecorationNone
+    {
+        text-decoration: none;
+    }
+    
+   #Nom_du_site
+   {
+       margin-top: -30px;
+       margin-left: -20px;
+   }
+   #HovInsc
+   {
+       margin-top: 16px;
+       
+       
+   }
+    #AncreNav
+    {
+        display:flex;
+        flex-direction: row;
+        list-style: none;
+        
+    }
+    nav
+    {
+        margin-left:60%
+    }
+    #NAVportable
+    {
+        display: none;
+    }
+    #BoutonNavHeb
+    {
+        text-decoration: none;
+        color: black;
+        
+        text-align: center;
+        padding: 37px 10px;
+
+    }
+    
+    #BoutonNavHeb:hover 
+    {
+        
+        border-top:4px solid #0065FC !important;
+        color: #0065FC !important;
+        
+       
+        
+    }
+    #boutonNavHeb:focus
+    {
+        background-color: aquamarine;
+        border-top:4px solid #0065FC;
+        color: #0065FC;
+    }
+    
+    #BoutonNavAct
+    {
+        text-decoration: none;
+        color: black;
+       
+        text-align: center;
+        padding: 37px 50px;
+        
+
+    }
+    
+    #BoutonNavAct:hover
+    {
+        border-top:4px solid #0065FC !important;
+        color: #0065FC !important;
+        
+    }
+    
+    
+    
+    .MarginTop
+    {
+        margin-top: 20px;
+    }
+    
     
     .FlexRow
     {
@@ -28,11 +118,9 @@
         width: 380px;
         margin-left: 40px;
     }
+    
+    
     /*
-    #AncreNav
-    {
-        margin-left: 50%;
-    }
     .MarginRight
     {
         margin-right: 1%;
@@ -44,6 +132,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
         
         
     }
@@ -197,6 +286,7 @@
         flex-direction: column;
         align-items: center;
         margin-left: 3.5%;
+        margin-right: 3.5%;
     }
 
 /*Corps principal*/
@@ -457,6 +547,15 @@ header, main
         #AfficherMoins:hover
         {
             font-size: 20px;
+        }
+        #AfficherPlusL
+        {
+            display:none;
+        }
+        #AfficherMoinsL
+        {
+            
+            display:none;
         }
 
     /*Les plus populaires*/

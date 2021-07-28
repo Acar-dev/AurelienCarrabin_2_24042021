@@ -44,7 +44,7 @@ html body
     }
     .PaddingTop
     {
-        padding-top: 30px;
+        padding-top: 5px;
     }
     
         
@@ -97,82 +97,7 @@ html body
                     
                     }
                     
-                    /*Habillage Nav*/
-                    .DecorationNone
-                    {
-                        text-decoration: none;
-                    }
-                    /*
-                    #HovInsc:hover
-                    {
-                        
-                        font-size: 17px;
-                        
-                    }
-                    */
                     
-                    #AncreNav
-                    {
-                        display:flex;
-                        flex-direction: row;
-                        
-                        
-                        
-                    }
-                    #NAVportable
-                    {
-                        display: none;
-                    }
-                    #BoutonNavHeb
-                    {
-                        text-decoration: none;
-                        color: black;
-                        
-                        text-align: center;
-                        padding: 37px 10px;
-
-                    }
-                    
-                    #BoutonNavHeb:hover 
-                    {
-                        
-                        border-top:4px solid #0065FC !important;
-                        color: #0065FC !important;
-                        
-                       
-                        
-                    }
-                    #boutonNavHeb:focus
-                    {
-                        background-color: aquamarine;
-                        border-top:4px solid #0065FC;
-                        color: #0065FC;
-                    }
-                    
-                    #BoutonNavAct
-                    {
-                        text-decoration: none;
-                        color: black;
-                        
-                        text-align: center;
-                        padding: 37px 50px;
-                        
-
-                    }
-                    
-                    #BoutonNavAct:hover
-                    {
-                        border-top:4px solid #0065FC !important;
-                        color: #0065FC !important;
-                        
-                    }
-                    
-                    
-                    
-                    .MarginTop
-                    {
-                        margin-top: 20px;
-                    }
                     
                     /*Titres*/
                     h1

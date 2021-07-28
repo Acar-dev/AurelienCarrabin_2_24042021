@@ -1,11 +1,30 @@
-@media all and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape)
+@media all and (min-width: 737px) and (max-width: 1024px) and (orientation:landscape)
 
 {
     header
     {
+        display: flex;
+        flex-direction: row;
         width: 100%;
+       
+        padding-left: 50px;
+        padding-top: 25px;
     }
-    
+    #HovInsc
+   {
+       margin-top: 16px;
+       
+   }
+   #AncreNav
+    {
+        display:flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    nav
+    {
+        margin-left:25%
+    }
     .FlexRow
     {
         width: auto;
@@ -34,7 +53,72 @@
         margin-right: 1%;
     }
     */
+    /*Habillage Nav*/
+    .DecorationNone
+    {
+        text-decoration: none;
+    }
+    #Nom_du_site
+                   {
+                       margin-top: -30px;
+                       margin-left: -20px;
+                   }
+                    
+                    #AncreNav
+                    {
+                        display:flex;
+                        flex-direction: row;
+                        list-style: none;
+                        
+                        
+                    }
+                    #NAVportable
+                    {
+                        display: none;
+                    }
+                    #BoutonNavHeb
+                    {
+                        text-decoration: none;
+                        color: black;
+                        
+                        text-align: center;
+                        padding: 37px 10px;
 
+                    }
+                    
+                    #BoutonNavHeb:hover 
+                    {
+                        
+                        border-top:4px solid #0065FC !important;
+                        color: #0065FC !important;
+                        
+                       
+                        
+                    }
+                    #boutonNavHeb:focus
+                    {
+                        background-color: aquamarine;
+                        border-top:4px solid #0065FC;
+                        color: #0065FC;
+                    }
+                    
+                    #BoutonNavAct
+                    {
+                        text-decoration: none;
+                        color: black;
+                        
+                        text-align: center;
+                        padding: 37px 50px;
+                        
+
+                    }
+                    
+                    #BoutonNavAct:hover
+                    {
+                        border-top:4px solid #0065FC !important;
+                        color: #0065FC !important;
+                        
+                    }
 .FlexTop
     {
         display: flex;

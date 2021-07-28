@@ -1,9 +1,39 @@
 @media all and (min-width: 767px) and (max-width: 781px) and (orientation:portrait)
 
 {
-    
-    
-    
+    header
+    {
+        display: flex;
+        flex-direction: row;
+
+        width: 100%;
+        padding-left: 3.4%;
+        
+        padding-top: 25px;
+    }
+    #Nom_du_site
+   {
+       margin-top: -30px;
+       
+   }
+   #HovInsc
+   {
+       margin-top: 16px;
+       
+       
+       
+   }
+    #AncreNav
+    {
+        display:flex;
+        flex-direction: row;
+        list-style: none;
+        
+    }
+    nav
+    {
+        margin-left:20%
+    }
     .FlexRow
     {
         width: auto;
@@ -13,23 +43,10 @@
         
         height: auto; 
     }
-    #BoxHebergement
-    {
-        width: 47%;
-        
-    }
-    #BoxPopulaire
-    {
-        width: 47%;
-        margin-left: -10px;
-        
-        
-        
-    }
     /*Espacements*/
     .sizeLiens
     {
-        width: 50%;
+        width: 10%;
     }
     /*
     #AncreNav
@@ -42,6 +59,72 @@
     }
     */
 }
+/*Habillage Nav*/
+.DecorationNone
+{
+    text-decoration: none;
+}
+#Nom_du_site
+                   {
+                       margin-top: -30px;
+                       margin-left: -20px;
+                   }
+                    
+                    #AncreNav
+                    {
+                        display:flex;
+                        flex-direction: row;
+                        list-style: none;
+                        
+                        
+                    }
+                    #NAVportable
+                    {
+                        display: none;
+                    }
+                    #BoutonNavHeb
+                    {
+                        text-decoration: none;
+                        color: black;
+                        
+                        text-align: center;
+                        padding: 37px 10px;
+
+                    }
+                    
+                    #BoutonNavHeb:hover 
+                    {
+                        
+                        border-top:4px solid #0065FC !important;
+                        color: #0065FC !important;
+                        
+                       
+                        
+                    }
+                    #boutonNavHeb:focus
+                    {
+                        background-color: aquamarine;
+                        border-top:4px solid #0065FC;
+                        color: #0065FC;
+                    }
+                    
+                    #BoutonNavAct
+                    {
+                        text-decoration: none;
+                        color: black;
+                        
+                        text-align: center;
+                        padding: 37px 50px;
+                        
+
+                    }
+                    
+                    #BoutonNavAct:hover
+                    {
+                        border-top:4px solid #0065FC !important;
+                        color: #0065FC !important;
+                        
+                    }
 .FlexTop
     {
         display: flex;
@@ -382,7 +465,7 @@ header, main
     #BoxHebergement
     {
         height: 570px;
-       
+       width: 50%;
         padding-left: 27px;
        padding-top: 7px;
        padding-bottom: 50px;
@@ -397,6 +480,7 @@ header, main
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .BoutonLieux
     {
@@ -478,7 +562,7 @@ header, main
     #BoxPopulaire
     {
         height: 560px;
-        
+        width: 50%;
         border-radius: 16px;
         margin-left: 1%;
         padding-left: 17px;

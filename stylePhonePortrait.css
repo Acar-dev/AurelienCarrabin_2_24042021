@@ -8,8 +8,55 @@
     header
     {
         width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        justify-content: space-between;
     }
-   
+    /*Habillage Nav*/
+    .DecorationNone
+    {
+        text-decoration: none;
+    }
+    #Nom_du_site
+    {
+        margin-top: -20px;
+        margin-left: 3.4%;
+    }
+    .PaddingTop
+    {
+        padding-top: 30px;
+        
+        
+    }
+    #AncreNav
+    {
+        list-style: none;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #Nom_du_site
+    {
+        order:1;
+    }
+    nav:nth-child(2)
+    {
+        align-self: flex-end;
+        order:3;
+        
+        width: 100%;
+        overflow: hidden;
+        
+    }
+    #HovInsc
+    {
+        order:2;
+        margin-right: 3.4%;
+    }
     /*body div div h2
     {
         white-space: nowrap;
@@ -18,115 +65,63 @@
     {
         margin-left: 3.5%;
     }
-    #NAVportable
-                    {
-                        display: block;
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-around;
-                        margin-top: 30px;
-                        
-                        width: 100%;
-                        padding-bottom: 20px;
-                        
-                        margin-bottom: 30px;
-                        
-                        
-                    }
-                    #box
-                    {
-                        width: 50%;
-                        
-                        border-bottom: 4px solid #F2F2F2;
-                    }
-                    #box2
-                    {
-                        width: 50%;
-                        height: 50px;
-                        
-                        border-bottom: 4px solid #F2F2F2;
-                    }
-                    #BoutonNavHebP
+    
+    
+                    #BoutonNavHeb
                     {
                         text-decoration: none;
                         color: black;
-                       
-                        text-align: center;
+                        text-align: center;                      
+                        padding-bottom: 10%;
+                        margin-left: -149%;
+                        border-bottom: 4px solid #dddcdc;
+                        padding-left: 115%;
+                        padding-right: 165%;
                     }
                     
-                    #box:hover 
+                    #BoutonNavHeb:hover
                     {
-                        
                         border-bottom:4px solid #0065FC !important;
                         color: #0065FC !important;
                     }
-                    #BoutonNavHebP:hover
-                    {
-                        color: #0065FC !important;
-                    }
-                    #box2:focus
-                    {
-                        
-                        border-bottom:4px solid #0065FC;
-                        color: #0065FC;
-                    }
+                   
                     
-                    #BoutonNavActP
+                    #BoutonNavAct
                     {
                         text-decoration: none;
                         color: black;
-                        
                         text-align: center;
+                        padding-bottom: 18%;
+                        padding-left: 150%;
+                        padding-right: 220%;
+                        margin-left: -165%;
+                        border-bottom: 4px solid #dddcdc;
+                        
                     }
                     
-                    #box2:hover
+                    #BoutonNavAct:hover
                     {
+                        color: #0065FC !important;
                         border-bottom:4px solid #0065FC !important;
-                        color: #0065FC !important;
-                        
-                    }
-                    #BoutonNavActP:hover
-                    {
-                        color: #0065FC !important;
                     }
     .FlexRow
     {
         width: auto;
+        
     }
-    
-    
-    
-    #AncreNav
-    {
-        display: none;
-    }
-    /*
-    .MarginRight
-    {
-        margin-right: 20px;
-    }
-    */
-    #HovInsc
-    {
-        margin-left: 200%;
-    }
+   
 }
+/*
 .FlexTop
     {
         display: flex;
         flex-direction: row;
-        justify-content:space-evenly;
-        justify-content: center;
-        margin-left: 30%;
-        
-        
+        flex-wrap: wrap;
+        height: 160px;
     }
-    .PaddingTop
-    {
-        padding-top: 5px;
-        margin-left: -260px;
-        
-    }
+*/
+    
+    
 /*Espacements*/
 .sizeLiens
 {
@@ -314,6 +309,7 @@ header, main
     margin-left: 0px;
 }
     /*En tête*/
+    
     #Nom_du_site img
     {
         width: 120px;
@@ -511,9 +507,9 @@ header, main
     .FlexImages
     {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: center;
+        align-items: center;
     }
     .BoutonLieux
     {
@@ -590,6 +586,16 @@ header, main
             
             display:none;
         }
+        #AfficherPlusL
+        {
+            display:none;
+        }
+        #AfficherMoinsL
+        {
+            
+            display:none;
+        }
+
 
     /*Les plus populaires*/
     #BoxPopulaire

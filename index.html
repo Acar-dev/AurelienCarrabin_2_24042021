@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styleDesktop.css" media="all and (min-width: 1345px)">
-    <link rel="stylesheet" href="styleLaptop.css" media="all and (min-width: 1025px) and (max-width:1344px)">
+    <link rel="stylesheet" href="styleDesktop.css" media="all and (min-width: 1391px)">
+    <link rel="stylesheet" href="styleLaptop.css" media="all and (min-width: 1025px) and (max-width:1390px)">
     <link rel="stylesheet" href="stylePhoneLandscape.css" media="all and (min-width: 451px) and (max-width:736px) and (orientation:landscape)">
     <link rel="stylesheet" href="stylePhonePortrait.css" media="all and (min-width: 320px) and (max-width:766px) and (orientation:portrait)">
-    <link rel="stylesheet" href="styleTabletLandscape.css" media="all and (min-width: 768px) and (max-width:1024px) and (orientation:landscape)">
+    <link rel="stylesheet" href="styleTabletLandscape.css" media="all and (min-width: 737px) and (max-width:1024px) and (orientation:landscape)">
     <link rel="stylesheet" href="styleTabletPortrait.css" media="all and (min-width: 767px) and (max-width:1024px) and (orientation:portrait)">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,38 +23,23 @@
 <main id="MainFlex">
     <header>
 
-        <!--Navigation-->
-        <nav>
-            <!--Déplacement vers ancre-->
-                <div class="FlexTop">
+        <!--Nom du site-->
+        <div id="Nom_du_site" class="PaddingTop">
+            <img src="images/logo/Reservia@3x.png" alt="Logo Reservia"/>
+        </div>
 
-                    <!--Nom du site-->
-                    <div id="Nom_du_site" class="PaddingTop">
-                        <img src="images/logo/Reservia@3x.png" alt="Logo Reservia"/>
-                    </div>
-                        <div class="sizeLiens FlexRow">
-                            <div id="AncreNav">  
-                                <div class="BorderLien FlexCentre">
-                                    <div><a id="BoutonNavHeb" href="#BoxHebergement" onclick="Heb()">Hébergements</a><script src="Script.js"></script></div>
-                                </div>
-                                <div class="BorderLien FlexCentre">
-                                    <div><a id="BoutonNavAct" href="#BoxActivites" onclick="Act()">Activités</a><script src="Script.js"></script></div>
-                                </div>
-                            </div>  
-                            <div class="BorderLien FlexCentre MarginRight">
-                                <div><a id="HovInsc" class="Bleu DecorationNone Gras" href="#">S'inscrire</a></div>
-                            </div>
-                        </div>
-                </div>
-                <div id="NAVportable">
-                    <div class="BorderLien FlexCentre" id="box">
-                        <div><a id="BoutonNavHebP" href="#BoxHebergement" onclick="Heb()">Hébergements</a><script src="Script.js"></script></div>
-                    </div>
-                    <div class="BorderLien FlexCentre" id="box2">
-                        <div><a id="BoutonNavActP" href="#BoxActivites" onclick="Act()">Activités</a><script src="Script.js"></script></div>
-                    </div>
-                </div>
-        </nav>    
+        <!--Navigation-->
+        <nav> 
+            <ul id="AncreNav">
+                <li>
+                    <a id="BoutonNavHeb" href="#BoxHebergement">Hébergements</a>
+                </li>
+                <li>
+                    <a id="BoutonNavAct" href="#BoxActivites">Activités</a>
+                </li>
+            </ul> 
+        </nav>
+        <a id="HovInsc" class="Bleu DecorationNone Gras" href="#">S'inscrire</a>    
     </header>
 
 
@@ -106,7 +91,7 @@
 
 
         <!--Filtres-->
-        <div id="filters">
+        <section id="filters">
             <h2>Filtres</h2>
             <ul id="filter_ul">
                 <li class="icons_filters FiltreTextIcons FlexBetween RetourAlaLigne">
@@ -122,7 +107,7 @@
                     <div class="FiltreIcons Bleu BgBleuClair FlexCentre"><i class="fas fa-dog"></i></div>
                     <div class="FiltreText FlexCentre Gras">Animaux autorisés</div></li>
             </ul>
-        </div>
+        </section>
         
         <!--Info-->
         <div id="Info">
