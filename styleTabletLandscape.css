@@ -5,9 +5,9 @@
     {
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width: 94%;
        
-        padding-left: 50px;
+        
         padding-top: 25px;
     }
     #HovInsc
@@ -23,7 +23,7 @@
     }
     nav
     {
-        margin-left:25%
+        margin-left:38%
     }
     .FlexRow
     {
@@ -769,7 +769,7 @@ header, main
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    
     
 }
 #FlexPDP
