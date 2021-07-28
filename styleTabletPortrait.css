@@ -1,14 +1,12 @@
-@media all and (min-width: 767px) and (max-width: 781px) and (orientation:portrait)
+@media all and (min-width: 767px) and (max-width: 1024px) and (orientation:portrait)
 
 {
     header
     {
         display: flex;
         flex-direction: row;
-
         width: 100%;
         padding-left: 3.4%;
-        
         padding-top: 25px;
     }
     #Nom_du_site
